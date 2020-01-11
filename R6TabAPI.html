@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head class="head">
+        <title>R6TabApi Search Tool</title>
+        <link rel="stylesheet" href="R6TabAPI.css">
+        <h1>Ugly and lazy R6TabApi Search Tool</h1>
+    </head>
+
+    <body>
+        <div id="mainbody">
+        <h2>Username</h2>
+        <div>   
+            <input id="Usernametxt" type="text">     
+            <input type="submit" value="Search" onclick="searchUsername()">
+        </div>
+    </br>
+        <div>
+            <h2>Search Results</h2>
+            <h2 id="searchtxt">...</h2>
+        </div>
+    </br>
+        <div>
+            <h3>Insert PlayerID</h3>
+            <input id="Userpidtxt" type="text">     
+            <input type="submit" value="Search" onclick="getUserPID()">
+            <h3>Number of Searches</h3>
+            <input id="numofsearches" type="number">
+            <input type="submit" value="Go" onclick="runSearches()">
+            <h3>Time between searches(miliseconds)</h3>
+            <input id="pauseinms" type="number">
+            <input type="submit" value="Go" onclick="runSearches()">
+        </div>
+        <div>
+            <h2>Accout Info</h2>
+            <h2 id="accounttxt">...</h2>
+        </div>
+    </br>
+        <div id="modal" class="modal" hidden>
+            <div class="modal-content">
+                <p>Would you like to start a new game?</p>
+                <button type="button" onclick="location.reload()">YES</button>
+                <button type="button" onclick="alert('This window will now close'); window.close();">NO</button>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </body>
+    
+    <footer>
+        <small><i>Created by an LFT developer, for use by LFT Gang members</i></small>
+    </footer>
+</html>
+
+<script src="R6TabAPI.js"></script>

@@ -46,16 +46,24 @@ function getUserPID() {
     Request.send();  
 }
 
-function runSearches(){
+async function runSearches(){
     var numofsearches = document.getElementById('numofsearches').value;
+    var milliseconds = document.getElementById('pauseinms').value;
     console.log(numofsearches);
     for (i = 0; i < numofsearches; i++) {
         getUserPID();
-    }
-    function startnew() {
-    document.getElementById("newgamemodal").hidden = false;
+        await sleep(milliseconds);
     }
 }
+   
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+
+function startnew() {
+    document.getElementById("newgamemodal").hidden = false;
+}
+
 
 
 
