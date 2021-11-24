@@ -2,7 +2,7 @@
 
 function searchUsername(){var e,t="https://r6tab.com/api/search.php?platform=uplay&search="+document.getElementById("Usernametxt").value,n=new XMLHttpRequest,s=[];n.onload=function(){for(i in console.log(t),e=JSON.parse(n.responseText),console.log(e.results),console.log(e.results[0]),e.results){for(j in e.results[i]){var o=[];o.push("Name: "+e.results[i].p_name),o.push("  Level: "+e.results[i].p_level),o.push("  MMR: "+e.results[i].p_currentmmr),o.push("  Id: "+e.results[i].p_id)}s.push(o+"<br>")}document.getElementById("searchtxt").innerHTML=s.toString().split(",").join(" ")},n.open("GET",t),n.send()}
 function getUserPID() {
-    var e, t = "https://tabstats.com/siege/player/cute-boy/" + document.getElementById("Userpidtxt").value, n = new XMLHttpRequest, s = [];
+    var e, t = "https://tabstats.com/siege/player/" + document.getElementById("Userpidtxt").value, n = new XMLHttpRequest, s = [];
     n.onload = function() {
         console.log(t)
         //e = JSON.parse(n.responseText),
