@@ -4,13 +4,13 @@ function searchUsername(){var e,t="https://r6tab.com/api/search.php?platform=upl
 function getUserPID() {
     var e, t = "https://tabstats.com/siege/player/cute-boy/" + document.getElementById("Userpidtxt").value, n = new XMLHttpRequest, s = [];
     n.onload = function() {
-        console.log(t),
-        e = JSON.parse(n.responseText),
-        console.log(e),
-        s.push("PlayerFound: " + e.playerfound + "<br>"),
-        s.push("Visitors: " + e.p_visitors + "<br>"),
-        s.push("AccountName: " + e.p_name),
-        document.getElementById("accounttxt").innerHTML = s.toString().split(",").join(" ")
+        //console.log(t),
+        //e = JSON.parse(n.responseText),
+        //console.log(e),
+        //s.push("PlayerFound: " + e.playerfound + "<br>"),
+        //s.push("Visitors: " + e.p_visitors + "<br>"),
+        //s.push("AccountName: " + e.p_name),
+        //document.getElementById("accounttxt").innerHTML = s.toString().split(",").join(" ")
     }
     ,
     n.open("GET", t),
